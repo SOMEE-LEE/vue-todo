@@ -1,12 +1,33 @@
-/* @font-face {
-  font-family: 'HG';
+@font-face {
+  font-family: 'Pretendard';
   font-style: normal;
-  font-weight: 800;
-  src: url(../fonts/HGGGothicssi_Pro_80g.eot);
-  src: url(../fonts/HGGGothicssi_Pro_80g.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/HGGGothicssi_Pro_80g.woff) format('woff'),
-    url(../fonts/HGGGothicssi_Pro_80g.ttf) format('truetype');
-} */
+  font-weight: 400;
+  src: url(./assets/fonts/Pretendard-Regular.eot);
+  src: url(./assets/fonts/Pretendard-Regular.eot?#iefix)
+      format('embedded-opentype'),
+    url(./assets/fonts/Pretendard-Regular.woff) format('woff'),
+    url(./assets/fonts/Pretendard-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 500;
+  src: url(./assets/fonts/Pretendard-Medium.eot);
+  src: url(./assets/fonts/Pretendard-Medium.eot?#iefix)
+      format('embedded-opentype'),
+    url(./assets/fonts/Pretendard-Medium.woff) format('woff'),
+    url(./assets/fonts/Pretendard-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pretendard';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./assets/fonts/Pretendard-Bold.eot);
+  src: url(./assets/fonts/Pretendard-Bold.eot?#iefix)
+      format('embedded-opentype'),
+    url(./assets/fonts/Pretendard-Bold.woff) format('woff'),
+    url(./assets/fonts/Pretendard-Bold.ttf) format('truetype');
+}
 
 /* 반응형, 모바일에서 모든요소의 패딩,선을 크기안에 포함시킴 */
 *,
@@ -17,9 +38,9 @@
 
 /* 컬러 변수 */
 :root {
-  --point-color1: #149f5c;
+  --point-color1: #b83030;
   --point-color2: #009223;
-  --txt-color-400: #919191;
+  --txt-color-400: #ddd;
   --txt-color-500: #666;
   --txt-color-600: #333;
 }
@@ -215,8 +236,8 @@ select,
 textarea,
 button,
 table {
-  font-family: 'Noto Sans KR', '맑은 고딕', 'malgun gothic',
-    'Apple SD Gothic Neo', sans-serif;
+  font-family: 'Pretendard', '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo',
+    sans-serif;
   font-size: 16px;
   color: var(--txt-color-500);
   letter-spacing: -0.03em;
@@ -359,10 +380,10 @@ input[type='checkbox']:checked + label::after {
   content: '';
   position: absolute;
   left: 1px;
-  top: 4px;
-  width: 24px;
-  height: 24px;
-  background: url(../images/common/check.svg) no-repeat 0 0 / 18px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: url(./assets/images/check.svg) no-repeat 0 0 / 18px;
 }
 
 /* radio 공통 */
